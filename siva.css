@@ -1,0 +1,61 @@
+h3{
+    font-size:30px;
+    margin-top: 30px;
+    margin-left: 25px;
+
+}
+.logo img{
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    overflow: hidden;
+    background-color:white;
+}
+.active{
+    background-color: #7D53DF;
+    border-radius: 30px;
+}
+
+li{
+    float: right;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    background-color:#7D53DF;
+    border-radius: 30px;
+}
+.ourservice{
+    display: flex;
+
+}
+
+.clean img{
+    flex: 33.33%;
+    padding: 5px;
+    width: 220px;
+    height: 190;
+    border-radius: 62px;
+    margin-left: 50px;
+    box-shadow: -9px 4px 4px #00000040;
+}
+   
+.clean p{
+    margin-top: auto;
+    margin-left: 50px;
+}
