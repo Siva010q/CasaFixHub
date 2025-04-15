@@ -101,6 +101,8 @@
   }
   
   button {
+    width: 451px;
+    height: 56px;
     padding: 14px;
     border: none;
     background: #A78BFA;
