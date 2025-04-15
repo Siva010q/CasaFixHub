@@ -31,13 +31,14 @@ header{
     list-style: none;
     transform: 0.5s;
     margin-left: auto;
+    color: black;
+    font-weight: 700;
 
 }
 .nav-links li{
     display: inline-block;
     padding: 0px 10px;
-    color: black;
-    font-weight: 700;
+
 
     
 }
