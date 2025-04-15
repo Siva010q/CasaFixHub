@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
   }
   
   header {
@@ -14,6 +13,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
   
+
   .logo {
     font-size: 28px;
     font-weight: 700;
@@ -28,7 +28,7 @@
     text-decoration: none;
     color: #000;
     margin-left: 25px;
-    font-weight: 500;
+    font-weight: 700;
   }
   
   nav a.active {
@@ -83,10 +83,11 @@
   }
   
   .input-box input {
-    width: 100%;
+    width: 451px;
+    height: 56px;
     padding: 14px 45px 14px 15px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 22px;
     outline: none;
     font-size: 14px;
   }
@@ -104,8 +105,8 @@
     border: none;
     background: #A78BFA;
     color: #fff;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 30px;
+    border-radius: 22px;
     cursor: pointer;
     transition: background 0.3s;
   }
@@ -114,7 +115,6 @@
     background: #8B5CF6;
   }
   
-  /* Responsive */
   @media (max-width: 900px) {
     .container {
       flex-direction: column;
