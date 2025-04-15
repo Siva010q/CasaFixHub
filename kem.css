@@ -42,13 +42,18 @@ body {
   }
   
   .hero-section {
+    width: 1121px;
+    height: 492px;
     position: relative;
     text-align: center;
-    margin: 40px auto;
-    max-width: 900px;
-    border-radius: 30px;
+    border-radius: 121px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    object-position: center;
+    opacity: 76%;
+    margin-top: 69px;
+    margin-left:173px;
+    object-fit: cover;
   }
   
   .hero-img {
@@ -67,19 +72,29 @@ body {
   }
   
   .hero-text h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color:  #F8F24F;
+    font-size:55px;
+    font-weight: 900;
+    color: #F8F24F;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family:Georgia, serif ;
+    margin-top: 10px;
 
   }
   
   
   .hero-text p {
-   width: 917px;
-   height: 241px;
-   top: 349px;
-   left: 176px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -1%;
+    font-family: Verdana, sans-serif;
     color: #AAA8A8;
-    ;
+    text-align: start;
+    
+
+    
+   
+    
   }
   
