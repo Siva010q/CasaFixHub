@@ -5,45 +5,50 @@ h3{
     margin-left: 25px;
 
 }
-.logo img{
+header {
     display: flex;
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding-top: 15px;
-    overflow: hidden;
-    background-color:white;
-}
-.active{
-    background-color: #7D53DF;
-    border-radius: 30px;
-}
-
-li{
-    float: right;
-}
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4B0082;
+  }
+  
+  .logo span {
+    color: #000;
+  }
+  
+  nav a {
     text-decoration: none;
-}
+    color: #000;
+    margin-left: 25px;
+    font-weight: 500;
+  }
+  
+  nav a.active {
+    background: #7D53DF;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
 
-li a:hover {
-    color: white;
-    background-color:#7D53DF;
-    border-radius: 30px;
-}
+  nav a:hover{
+    background: #7D53DF;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
 .ourservice{
     display: flex;
     flex-wrap: wrap;
+    padding: 50px;
+    margin-left: 100px;
 
 }
 
@@ -60,6 +65,6 @@ li a:hover {
 .clean p{
     flex: 33.33%;
     margin-top: auto;
-    margin-left: 50px;
-    padding: 5px;
+    margin-left: 70px;
+    padding: 10px;
 }
