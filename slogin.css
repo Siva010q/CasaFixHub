@@ -51,6 +51,11 @@
     justify-content: center;
     padding: 50px 60px;
   }
+
+  .vline{
+    border-right: 1px solid black;
+    height: 420px;
+  }
   
   .image-section {
     flex: 1;
@@ -90,6 +95,8 @@
     border-radius: 22px;
     outline: none;
     font-size: 14px;
+    letter-spacing: 9%;
+    box-shadow: 2px 4px 4px#000000 ;
   }
   
   .input-box i {
@@ -105,7 +112,7 @@
     height: 56px;
     padding: 14px;
     border: none;
-    background: #A78BFA;
+    background: #AE91F3;
     color: #fff;
     font-size: 30px;
     border-radius: 22px;
