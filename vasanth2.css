@@ -1,0 +1,29 @@
+
+body, html {
+    height: 100%;
+    margin: 0%;
+  }
+
+.div{
+    padding: 30px 50px;
+}
+.bg-image {
+    background-image: url("6212b7cc-e57b-40b1-ae23-5875f5d0adbe.jpg");
+    filter: blur(2px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+
+  }
+.background{
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%;
+    padding: -20px 20px;
+    margin-top: -20px;
+  }
