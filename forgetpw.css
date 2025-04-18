@@ -5,3 +5,34 @@
     margin-left: 80px;
 
 }
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}.container{
+    width: 360;
+    height:270px;
+    top: 233px;
+    left: 139px;
+    
+    background-color: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 4px 6px 12px rgb(215, 210, 210, 1);
+    border: 1px solid #0000;
+
+
+
+}
+.forget-form h2{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700
+    color: #cfcccc;
+}
+.forget-form input[]

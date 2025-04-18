@@ -1,23 +1,17 @@
 
-body {
-    
-
+  * {
     margin: 0;
-    font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    background-color: #fff;
+    padding: 0;
+    box-sizing: border-box;
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    
-    
+    padding: 20px 60px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
   
   .logo {
