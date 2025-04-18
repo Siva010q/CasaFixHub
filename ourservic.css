@@ -38,17 +38,13 @@ header {
     border-radius: 20px;
   }
 
-  nav a:hover{
-    background: #7D53DF;
-    color: #fff;
-    padding: 5px 12px;
-    border-radius: 20px;
-  }
+
 .ourservice{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
     margin-left: 100px;
+    
 
 }
 
