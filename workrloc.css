@@ -78,3 +78,6 @@ h1 {
 .search-btn:hover {
   background: #b889f0;
 }
+*{
+  text-decoration: none;
+}

@@ -61,4 +61,12 @@ h1{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
+.secound-dev{
+  display: grid;
+}
+.img{
+  place-self: center;
+}
+

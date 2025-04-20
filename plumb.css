@@ -54,4 +54,6 @@ body {
     margin-bottom: 12px;
     color: #fff;
   }
-  
+  *{
+    text-decoration: none;
+  } 

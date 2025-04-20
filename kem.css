@@ -40,8 +40,7 @@ nav a.active {
   text-decoration: none;
 }
   .hero-section {
-    width: 1121px;
-    height: 492px;
+    height: 700px;
     position: relative;
     text-align: center;
     border-radius: 121px;
@@ -53,7 +52,7 @@ nav a.active {
   }
   
   .hero-img {
-    width: 100%;
+    padding-bottom: 20px;
     filter: blur(5px) brightness(0.85);
   }
   
@@ -68,6 +67,7 @@ nav a.active {
   }
   
   .hero-text h1 {
+    text-align: center;
     font-size:55px;
     font-weight: 900;
     color: #F8F24F;
@@ -96,6 +96,10 @@ nav a.active {
   .vasanth{
     padding-top: 70px;
     align-items: center;
+    place-self: center;
+  }
+  .grid{
+    display: grid;
   }
 
   

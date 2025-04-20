@@ -8,13 +8,12 @@ body, html {
     padding: 30px 50px;
 }
 .bg-image {
-    background-image: url("6212b7cc-e57b-40b1-ae23-5875f5d0adbe.jpg");
+    background-image: url("about2page.jpeg");
     filter: blur(2px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
+    background-attachment: fixed;
 
   }
 .background{
