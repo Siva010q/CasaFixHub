@@ -1,5 +1,7 @@
 
-
+body{
+  display: grid;
+}
   
   header {
     display: flex;
@@ -46,6 +48,7 @@
     margin-top: 69px;
     margin-left:173px;
     object-fit: cover;
+    margin: auto;
   }
   
   .hero-img {
