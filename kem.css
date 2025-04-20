@@ -1,39 +1,44 @@
-
-body{
-  display: grid;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    
-    
-  }
-  
-  .logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #4B0082;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #000;
-    margin-left: 25px;
-    font-weight: 700;
-  }
-  
-  nav a.active {
-    color: white;
-    background: #7D53DF;
-    padding: 5px 12px;
-    border-radius: 20px;
-  }
-  
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4B0082;
+}
+
+.logo span {
+  color: #000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a.active {
+  background: #7D53DF;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+}
   .hero-section {
     width: 1121px;
     height: 492px;
@@ -80,7 +85,7 @@ body{
     line-height: 48px;
     letter-spacing: -1%;
     font-family: Verdana, sans-serif;
-    color: #AAA8A8;
+    color: #ffffff;
     text-align: start;
   }
   *{
@@ -92,5 +97,5 @@ body{
     padding-top: 70px;
     align-items: center;
   }
-  
+
   
