@@ -17,6 +17,7 @@ body{
     top: 0px;
     z-index: -1;
     margin-left: 80px;
+
     margin-top: 40px;
     
   } 
@@ -64,4 +65,42 @@ body{
 }
 #botton:hover{
   background-color:#825ed5 ;
+
+
+    position: sticky;
+    top: 0;
+
 }
+.fp{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    width: 360;
+    height:270px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 4px 6px 12px rgb(215, 210, 210, 1);
+    border: 1px solid #0000;
+}
+.input{
+    text-align: center;
+}
+.forget-form h2{
+    position: fixed;
+}
+*{
+    text-decoration: none;
+  }
+.rrl{
+    display: flex;
+    text-align: center;
+  }
+

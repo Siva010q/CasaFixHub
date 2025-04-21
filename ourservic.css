@@ -1,19 +1,25 @@
-h3{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:30px;
-    margin-top: 30px;
-    margin-left: 25px;
-
-}
-header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.grid{
+    display: grid;
+    text-align: center;
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
   }
   
+
   .logo {
     font-size: 28px;
     font-weight: 700;
@@ -29,6 +35,7 @@ header {
     color: #000;
     margin-left: 25px;
     font-weight: 700;
+    text-decoration: none;
   }
   
   nav a.active {
@@ -36,14 +43,21 @@ header {
     color: #fff;
     padding: 5px 12px;
     border-radius: 20px;
+    text-decoration: none;
   }
+  h3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:30px;
+    margin-top: 30px;
+    margin-left: 25px;
 
-
+}
 .ourservice{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
     margin-left: 100px;
+    margin: auto;
     
 
 }
@@ -51,18 +65,31 @@ header {
 .clean img{
     flex: 33.33%;
     padding: 5px;
-    width: 220px;
-    height: 190;
+    width: 300px;
+    height: 250px;
     border-radius: 62px;
     margin-left: 50px;
     box-shadow: -9px 4px 4px #00000040;
 }
    
 .clean p {
+    color: #000;
     text-decoration: none;
     flex: 33.33%;
     margin-top: auto;
     margin-left: 70px;
     padding: 10px;
    
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+h3{
+  padding-left: 400px;
+  font-size: 50px;
 }

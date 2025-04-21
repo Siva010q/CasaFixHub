@@ -1,14 +1,18 @@
 <html>
+
 <head>
   <title>Worker Login</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+  </style>
+    <link rel="icon" type="image/x-icon" href="logo1.png">
   <link rel="stylesheet" href="loginsiva.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
 
+<body>
   <header>
     <div class="logo"><a href="index.html"><img src="logo1.png" alt="logo" width="100px" height="80px"></a></div>
     <nav>
@@ -19,33 +23,40 @@
       <a href="vasanth.html">About Us</a>
     </nav>
   </header>
-
-  <div class="container">
-    <div class="image-section">
-      <img src="IMG-20250415-WA0002 (2).jpg" alt="Illustration">
-    </div>
-
-    <div class="vline"></div>
-
-
-    <div class="login-section">
-      <h2>Login as a Worker</h2>
-      <br>
-      <form action="#" class="inline">
-        <div class="input-box">
-          <input type="email" placeholder=" e x a m p l e @  g m a  i l . c o m "  required>
-         
-        </div>
+  <div class="grid">
+    <div class="container">
+      <div class="image-section">
+        <img src="IMG-20250415-WA0002 (2).jpg" alt="Illustration">
+      </div>
+      <div class="vline"></div>
+      <div class="login-section">
+        <h2>Login as a Worker</h2>
         <br>
-        <div class="input-box">
-          <input type="password" placeholder="  x x x x x x x x x " required>
-          <i class="fa-lock"></i>
+        <form action="#" class="inline">
+          <div class="input-box">
+            <input type="email" placeholder=" e x a m p l e @  g m a  i l . c o m " required >
+            <img src="icons8-worker-50 (1).png" width="40px" height="40px" class="icon">
+          </div>
+          <br>
+          <div class="input-box">
+            <input type="password" placeholder="  x x x x x x x x x " required>
+            <i class="fa-lock"></i>
+            <img src="lock icon.png" width="40px" height="40px" class="icon">
+          </div>
+          <a href="forgetpw.html" class="fp">Forgot password ?</a>
+          <br>
+
+          <button type="submit">Login</button>
+        </form><br>
+        <div class="signup">
+          <p>
+            Don't Have An Account? <a href="#">Sign Up</a>
+          </p>
         </div>
-        <br>
-        <button type="submit">Login</button>
-      </form>
+      </div>
     </div>
   </div>
 
 </body>
+
 </html>

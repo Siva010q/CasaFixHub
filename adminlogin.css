@@ -45,6 +45,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px 60px;
+    place-self: center;
   }
 
   .vline{
@@ -133,4 +134,16 @@
       flex-direction: column;
       gap: 10px;
     }
+  }
+  .grid{
+    display: grid;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .icon{
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    text-align: center;
+
   }

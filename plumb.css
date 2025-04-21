@@ -10,6 +10,7 @@ body {
   }
   
   .card {
+    color: #fff;
     background-color: #B388EB;
     padding: 30px;
     border-radius: 20px;
@@ -54,4 +55,6 @@ body {
     margin-bottom: 12px;
     color: #fff;
   }
-  
+  *{
+    text-decoration: none;
+  } 
