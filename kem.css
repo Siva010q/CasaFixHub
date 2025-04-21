@@ -40,8 +40,29 @@ nav a.active {
   text-decoration: none;
 }
 .container{
-  width: 360px;
-  height: 270px;
+  background: url(WhatsApp\ Image\ 2025-04-09\ at\ 15.51.57_91783f37.jpg) center ; 
+  width: 1100px;
+  height: 492px;
+  margin-left: 100px;
+}
+.container h2{
+  margin-left: 18%;
+  font-weight: 900;
+  font-size:60px;
+  width: 900px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #f8f24f;
+  text-shadow: #ceca6c 9px 4px 4px ;
+}
+.container p{
+  color: #aaa8a8;
+  font-weight: 100;
+  size: 38px;
+  line-height: 48px;
+  letter-spacing: -7%;
+  
+
 }
 .background{
   width: 1100px;
