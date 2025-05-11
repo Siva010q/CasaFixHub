@@ -70,3 +70,46 @@ h1{
   place-self: center;
 }
 
+.grid2{
+  display: grid;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.about{
+  
+}
+
+.about p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  place-self: center;
+  padding-right: 500px;
+
+}
+ul{
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.gap .secound-dev{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gap .about{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+.gap .img{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

@@ -33,3 +33,10 @@ p{
   justify-content: center;
   padding: 50px;
 }
+
+.gap{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

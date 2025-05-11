@@ -1,11 +1,14 @@
 
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 header {
+    flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,5 +111,171 @@ nav a.active {
   .grid{
     display: grid;
   }
+  
+
+.page2{
+
+  padding-top: 50px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.page2 p{
+  padding-top: 70px;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  animation-name: exampl;
+  animation-duration: 15s;
+
+}
+@keyframes exampl {
+  0%   {left: 0px; bottom:0px;}
+  25%  { left: 50px; right:0px;}
+}
+
+.page2 img {
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 15s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(30px); /* Start slightly to the right */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.page3{
+  padding-top: 70px;
+  padding-left: 20px; 
+  padding-bottom: 70px;
+  display: flex;
+}
+
+.page3 p{
+  padding-top: 200px;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  animation-name: exampl;
+  animation-duration: 15s;
+}
+
+@keyframes exampl {
+  0%   {left: 0px; bottom:0px;}
+  25%  { left: 50px; right:0px;}
+}
+.page3 img{
+    position: relative;
+  animation-name: slideIn;
+  animation-duration: 15s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(30px); /* Start slightly to the right */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.page4{
+  padding-top: 70px;
+  padding-left: 20px; 
+  padding-bottom: 70px;
+  display: flex;
+}
+
+.page4 p{
+  padding-top: 50px;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  animation-name: exampl;
+  animation-duration: 15s;
+}
+
+@keyframes exampl {
+  0%   {left: 0px; bottom:0px;}
+  25%  { left: 50px; right:0px;}
+}
+
+.page4 img{
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 15s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(30px); /* Start slightly to the right */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.add{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.add h3{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.add2{
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+
+.aaa h2 {
+  padding-left: 10px;
 
   
+}
+.aaa ul {
+    padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.ass h2{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.add p {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.casa{
+  padding-top: 20px;
+}
+
+.footer{
+  background-color: #7D53DF;
+  color: white;
+}
+
+.gap{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
