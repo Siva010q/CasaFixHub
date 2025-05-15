@@ -103,7 +103,33 @@
     transform: translateY(-50%);
     color: #444;
   }
-  
+    #password{
+    width: 451px;
+    height: 56px;
+    padding: 14px 45px 14px 15px;
+    border: 1px solid #ddd;
+    border-radius: 22px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 9%;
+    box-shadow: 2px 4px 4px#000000 ;
+  }
+  .password-container {
+      position: relative;
+      display: inline-block;
+    }
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .toggle-password img {
+      width: 35px;
+      height: 35px;
+    }
+
   button {
     width: 451px;
     height: 56px;
