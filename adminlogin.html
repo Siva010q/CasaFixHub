@@ -1,45 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Admin Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Login</title>
+  <link rel="icon" type="image/x-icon" href="img\logo1.png">
   <link rel="stylesheet" href="adminlogin.css">
-  <link rel="icon" type="image/x-icon" href="logo1.png">
+
 </head>
 
 <body>
-
+  <!-- Navigation Bar -->
   <header>
-    <div class="logo"><a href="index.html"><img src="logo1.png" alt="logo" width="100px" height="80px"></a></div>
+    <div class="logo">
+      <img src="logo1.png" alt="Casa Fix Hub Logo">
+    </div>
     <nav>
-      <a href="adminlogin.html" class="active">Login</a>
-      <a href="index.html">Home</a>
+      <ul>
+        <li><a href=" index.html">Home</a></li>
+        <li><a href="index.html">Our Service</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="#contact">Support</a></li>
+      </ul>
     </nav>
   </header>
-  <div class="grp">
+
   <div class="grid">
     <div class="container">
       <div class="image-section">
-        <img src="WhatsApp Image 2025-04-15 at 15.56.31_9e2ecbe9.jpg" alt="Illustration">
+        <img src="IMG-20250415-WA0002 (2).jpg" alt="Illustration">
       </div>
-      <div class="vline"></div>
       <div class="login-section">
-        <h2>Login as a Admin User</h2>
+        <h2>Login</h2>
         <form>
           <div class="input-box">
             <input type="email" placeholder="example@gmail.com" required><span></span>
             <i class="fas fa-user"></i>
-
-            <img src="user4.png" width="40px" height="40px" class="icon">
-
+            <span>
+            <img src="user4.png" width="40px" height="40px" class="icon"></span>
           </div>
           <br>
           <div class="password-container">
-      <input type="password" id="password" placeholder="Password" required>
-      <span class="toggle-password" onclick="togglePassword()">
-        <img id="eyeIcon" src="https://img.icons8.com/ios-glyphs/30/invisible.png" alt="Toggle Password">
-      </span>
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="toggle-password" onclick="togglePassword()">
+              <img id="eyeIcon" src="https://img.icons8.com/ios-glyphs/30/invisible.png" alt="Toggle Password">
+            </span>
+          </div>
+          <br>
+          <a href="service-list.html"><button type="submit">Login</button></a>
+        </form>
+        <div class="signup">
+          <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+      </div>
     </div>
-
-          <script>
+  </div>
+  <script>
     function togglePassword() {
       const passwordInput = document.getElementById("password");
       const eyeIcon = document.getElementById("eyeIcon");
@@ -53,14 +70,6 @@
       }
     }
   </script>
-
-          <br>
-          <a href="service-list.html"><button type="submit">Login</button></a>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 
 </html>
