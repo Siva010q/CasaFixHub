@@ -1,61 +1,78 @@
-body {
+/* Reset and font */
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-color: #f3f3f3;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
   }
   
-  .card {
-    color: #fff;
-    background-color: #B388EB;
-    padding: 30px;
-    border-radius: 20px;
-    width: 300px;
-    height: 260px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    color: #fff;
-  }
-  
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .card-header h2 {
-    font-size: 24px;
-    color: #000;
-    margin: 0;
-  }
-  
+
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      padding: 25px;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-right: 100px;
+    }
+
+    .card-header h2 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+
   
   .back-button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #007bff;
+    padding: 5px 10px;
+    border-style: outset;
+    border-color: #333;
+    border-radius: 5px;
+    background-color: #e6f0ff;
+    transition: background 0.3s;
   }
   
+  .back-button:hover {
+    background-color: #d0e6ff;
+  }
   
   .service-list {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style: none;
   }
   
   .service-list li {
+    background-color: #f0f0f0;
     margin-bottom: 12px;
-    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
   }
   
-  *{
+  .service-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .service-list li a {
     text-decoration: none;
+    color: #333;
+    display: block;
   }
