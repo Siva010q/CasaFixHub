@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #E0E1DD, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  font-size: 24px;
+  background: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.back-btn a:hover {
+  background: #333;
+}
+
+
+.card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.card input:focus {
+  border-color: #a388f2;
+  outline: none;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #122d55;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #778DA9;
+  transform: translateY(-2px);
+}
+
+#message {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 18px;
+  }
+
+  .back-btn a {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
