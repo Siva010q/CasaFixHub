@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Verification</title>
+  <link rel="icon" type="image/x-icon" href="img/logo1.png">
+  <link rel="stylesheet" href="otp.css" />
+</head>
+
+<body>
+  <a class="back-button" href="index.html">
+    <img src="img\icon\logo1.png" alt="backbutton" />
+  </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification</title>
+    <link rel="icon" type="image/x-icon" href="img/logo1.png" />
+    <link rel="stylesheet" href="otp.css" />
+  </head>
+  <body>
+    <a class="back-button" href="index.html">
+      <img src="img\icon\logo1.png" alt="backbutton" />
+    </a>
+
+    <div class="container">
+      <h2>Enter OTP</h2>
+      <p>We have sent a 4-digit OTP to your phone</p>
+
+      <form id="otpForm">
+        <div class="otp-input">
+          <input type="text" maxlength="1" class="otp-box" />
+          <input type="text" maxlength="1" class="otp-box" />
+          <input type="text" maxlength="1" class="otp-box" />
+          <input type="text" maxlength="1" class="otp-box" />
+        </div>
+
+        <button type="submit">Verify</button>
+        <p id="message"></p>
+      </form>
+    </div>
+  <script src="otp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="reset.css" />
+</head>
+
+<body>
+  <a class="back-button" href="forgot pass.html">
+    <img src="img\icon\logo1.png" alt="backbutton" />
+  </a>
+  <div class="card">
+    <h2>Reset password</h2>
+    <input type="password" id="newPassword" placeholder="New Password" />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+    <a href="pass change.html"><button onclick="resetPassword()">Reset</button></a>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function resetPassword() {
+      const newPassword = document.getElementById("newPassword").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const message = document.getElementById("message");
+
+      if (newPassword === "" || confirmPassword === "") {
+        message.textContent = "Please fill in both fields.";
+        message.style.color = "red";
+      } else if (newPassword !== confirmPassword) {
+        message.textContent = "Passwords do not match.";
+        message.style.color = "red";
+      } else if (newPassword.length < 6) {
+        message.textContent = "Password must be at least 6 characters.";
+        message.style.color = "red";
+      } else {
+        message.textContent = "Password successfully reset!";
+        message.style.color = "green";
+      }
+    }
+  </script>
+</body>
+
+</html>
