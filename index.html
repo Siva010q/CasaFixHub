@@ -17,7 +17,6 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
         <li><a href="#services">Our Service</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Support</a></li>
@@ -28,15 +27,17 @@
   <br>
 
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-background">
       <img src="img/man-renovating-his-house-with-design-space.jpg" alt="Home Maintenance Professional" />
-      <div class="hello-content">
-        <h1>Welcome to Casa Fix Hub</h1>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Welcome to Casa Fix Hub</h1>
         <p>
           At Casa Fix Hub, we make home maintenance easy and hassle-free.
           Whether you need quick repairs, expert renovations, or home
           improvement solutions, our skilled professionals are here to help.
         </p>
+        </div>
       </div>
     </div>
   </section>
@@ -212,6 +213,33 @@
 
 
   <script src="script.js"></script>
+  <script>
+// Scroll animation trigger
+document.addEventListener('DOMContentLoaded', function() {
+  const animateOnScroll = function() {
+    const elements = document.querySelectorAll('.services, .about, .careers-section, .contact');
+    
+    elements.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (elementPosition < windowHeight - 100) {
+        element.style.opacity = '1';
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll();
+});
+
+// Smooth hover transitions
+document.querySelectorAll('.service-card, .learn-more, .submit-btn, .apply-btn').forEach(item => {
+  item.addEventListener('mouseenter', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+});
+</script>
 </body>
 
 </html>

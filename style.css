@@ -41,7 +41,7 @@ section {
     margin: 0 auto;
 }
 
-/* Header Styles */
+
 header {
     font-family: "Inter", sans-serif;
     display: flex;
@@ -81,7 +81,6 @@ nav ul li a:hover {
     background-color: #122d55;
 }
 
-/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -90,51 +89,82 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 5%;
-    position: relative;
+  position: relative;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 27, 42, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hero-content {
-    flex: 1 1 100%;
-    padding: 20px;
-    text-align: center;
-    order: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+  z-index: 2;
 }
-
 .hero-content h1 {
-    color: #0D1B2A;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
     font-size: 1rem;
-    color: #415A77;
-    max-width: 600px;
-    margin: 20px auto;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+  }
+  
+  .hero {
+    height: 80vh;
+  }
 }
 
-.hero-image {
-    flex: 1 1 100%;
-    order: 1;
-    margin-top: 30px;
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero {
+    height: 70vh;
+  }
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
 
-/* Services Section */
 .services {
     text-align: center;
     padding: 50px 5%;
@@ -158,11 +188,15 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(0);
+    overflow: hidden;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    background-color: #f8f9fa;
 }
 
 .service-card img {
@@ -170,7 +204,14 @@ nav ul li a:hover {
     height: 100px;
     object-fit: contain;
     margin: 0 auto 15px;
+    transition: none !important;
+    transform: none !important;
+
 }
+.service-card:hover img {
+    transform:  none !important;
+}
+
 
 .service-card h3 {
     color: #415A77;
@@ -338,6 +379,7 @@ nav ul li a:hover {
     text-align: left;
 }
 
+
 .form-row {
     display: flex;
     gap: 20px;
@@ -472,7 +514,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .hero {
         min-height: 600px;
@@ -575,4 +616,162 @@ footer {
     .intro {
         font-size: 1rem;
     }
+}
+
+
+
+
+/* ======================
+   ANIMATIONS & EFFECTS
+   ====================== */
+/* Hero Section Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content h1 {
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Section Entry Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.services, .about, .careers-section, .contact {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.services { animation-delay: 0.2s; }
+.about { animation-delay: 0.4s; }
+.careers-section { animation-delay: 0.6s; }
+.contact { animation-delay: 0.8s; }
+
+/* Enhanced Service Cards */
+.service-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+}
+
+.service-card img {
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Enhanced Buttons */
+.learn-more, .submit-btn, .apply-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.learn-more:hover, .submit-btn:hover, .apply-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more:after, .submit-btn:after, .apply-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.learn-more:hover:after, .submit-btn:hover:after, .apply-btn:hover:after {
+  left: 100%;
+}
+
+/* Navbar Link Animation */
+nav ul li a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* About Images Hover Effect */
+.about-images img {
+  transition: transform 0.5s ease;
+}
+
+.about-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.social-icons a {
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Form Input Effects */
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #415A77;
+  box-shadow: 0 0 0 2px rgba(65, 90, 119, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

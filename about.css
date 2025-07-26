@@ -150,8 +150,12 @@ nav ul li a:hover {
   height: auto;
   border-radius: 10px;
   margin: 10px 0;
+  transition: transform 0.5 ease;
 }
 
+.about-images img:hover, .service-card img:hover {
+  transform: scale(1.05);
+}
 .about h1 {
   font-size: 1.3rem;
   margin-top: 30px;
